@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+main {
+ padding: 5px;
+ min-height: 90vh;
+}
+.App{
+  max-width: 1200px;
+  margin: auto;
+}
