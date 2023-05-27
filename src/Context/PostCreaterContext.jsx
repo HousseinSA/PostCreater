@@ -4,12 +4,9 @@ import {addDoc, doc, onSnapshot, deleteDoc} from "firebase/firestore"
 import {db, colRef, auth, provider} from "../Firebase/server"
 import {signOut, signInWithPopup} from "firebase/auth"
 import {useNavigate} from "react-router-dom"
-
 export const PostContext = createContext()
-
 export const FireBaseContext = ({children}) => {
   const [posts, setPosts] = useState(new Array(3).fill(false))
-
   useEffect(() => {
     onSnapshot(colRef, (data) => {
       const getPosts = []
