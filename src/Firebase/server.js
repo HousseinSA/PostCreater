@@ -9,7 +9,7 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_APP_SENDER_ID,
   appId: process.env.REACT_APP_ID,
 }
-const app = initializeApp(firebaseConfig) //eslint-disable-line
+const app =  initializeApp(firebaseConfig) //eslint-disable-line
 export const db = getFirestore()
 export const colRef = collection(db, "posts")
 export const auth = getAuth()
